@@ -1,35 +1,83 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+
+// import Dessert from "@/components/dessert";
+// import Dinning from "@/components/dinning";
+// import Footer from "@/components/Footer";
+// import PizzaComponent from "@/components/pizzaComponent";
+// import PastaComponent from "@/components/pastaComponent";
+// import Navbar from "@/components/navbar";
+// import NavModalHeader from "@/components/navbar";
+
+// The HeroCarousel component is a full-screen hero section with a fading image slideshow.
+// All images and animation logic are contained within this single file.
+const images = [
+  "/images/landing-hero/pizza.png",
+  "/images/pasta.png",
+  "/images/landing-hero/beer-pour.png",
+  "/images/landing-hero/pizza-in-oven.png",
+  "/images/landing-hero/pizza2.png",
+  "/images/landing-hero/pizza3.png",
+];
+
+const HeroCarousel = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // useEffect hook to handle the automatic image change.
+  // It sets an interval to change the image every 5 seconds.
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    // Cleanup function to clear the interval when the component unmounts.
+    return () => clearInterval(timer);
+  }, []);
+
+  const goToNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToPrevImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      {/* <NavModalHeader /> */}
+      <div className="relative w-full h-screen overflow-hidden  bg-black">
+        {/* Image container */}
+        <div className="absolute inset-0">
+          {images.map((image, index) => (
+            <img
+              key={image}
+              src={image}
+              alt={`Hero image ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-3000 ease-in 
+              ${index === currentImageIndex ? "opacity-100" : "opacity-0"}`}
+            />
+          ))}
+        </div>
 
-export default App
+        {/* Hero text overlay */}
+        <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4">
+          <div className="text-center text-white space-y-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg ">
+              Bayside Pizzeria
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg text-center">
+              Authentic Italian Flavors by the Sea
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* <Dinning />
+      <PizzaComponent />
+      <PastaComponent />
+      <Dessert />
+      <Footer /> */}
+    </div>
+  );
+};
+
+export default HeroCarousel;
