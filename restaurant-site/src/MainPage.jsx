@@ -1,4 +1,6 @@
+import DessertComponent from "./components/DessertComponent";
 import DinningComponent from "./components/DinningComponent";
+import Footer from "./components/Footer";
 import HeroCarousel from "./components/HeroCarousel";
 import NavModalHeader from "./components/NavModalHeader";
 import PastaComponent from "./components/PastatComponent";
@@ -17,9 +19,8 @@ export default function MainPage() {
      <DinningComponent />
      <PizzaComponent />
      <PastaComponent  />
-
-      {/* <Dessert />
-      <Footer />  */}
+     <DessertComponent />
+    <Footer />
     </div>
   );
 }
