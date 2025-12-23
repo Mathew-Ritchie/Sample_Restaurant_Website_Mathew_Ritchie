@@ -1,6 +1,7 @@
 import DessertComponent from "./components/DessertComponent";
 import DinningComponent from "./components/DinningComponent";
 import Footer from "./components/Footer";
+import GalleryComponent from "./components/GalleryComponent";
 import HeroCarousel from "./components/HeroCarousel";
 import NavModalHeader from "./components/NavModalHeader";
 import PastaComponent from "./components/PastatComponent";
@@ -20,6 +21,7 @@ export default function MainPage() {
      <PizzaComponent />
      <PastaComponent  />
      <DessertComponent />
+     <GalleryComponent />
     <Footer />
     </div>
   );
