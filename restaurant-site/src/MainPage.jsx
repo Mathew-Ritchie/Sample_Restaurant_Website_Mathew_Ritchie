@@ -1,23 +1,25 @@
-import Dinning from "./components/Dinning";
+import DinningComponent from "./components/DinningComponent";
 import HeroCarousel from "./components/HeroCarousel";
 import NavModalHeader from "./components/NavModalHeader";
+import PastaComponent from "./components/PastatComponent";
+import PizzaComponent from "./components/PizzaComponent";
 // import Dessert from "@/components/dessert";
-// import Dinning from "@/components/dinning";
 // import Footer from "@/components/Footer";
-// import PizzaComponent from "@/components/pizzaComponent";
+
 // import PastaComponent from "@/components/pastaComponent";
 
 
 export default function MainPage() {
   return (
     <div>
-    < NavModalHeader />
-    <HeroCarousel />
-     <Dinning />
-      {/* <PizzaComponent />
-      <PastaComponent />
-      <Dessert />
-      <Footer /> */}
+     <NavModalHeader />
+     <HeroCarousel />
+     <DinningComponent />
+     <PizzaComponent />
+     <PastaComponent  />
+
+      {/* <Dessert />
+      <Footer />  */}
     </div>
   );
 }
