@@ -14,7 +14,7 @@ import PizzaComponent from "./components/PizzaComponent";
 
 export default function MainPage() {
   return (
-    <div>
+    <div className="w-full">
      <NavModalHeader />
      <HeroCarousel />
      <DinningComponent />
