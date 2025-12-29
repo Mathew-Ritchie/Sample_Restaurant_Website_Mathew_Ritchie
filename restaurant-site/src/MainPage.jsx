@@ -1,5 +1,5 @@
 import DessertComponent from "./components/DessertComponent";
-import DinningComponent from "./components/DinningComponent";
+import DiningComponent from "./components/DiningComponent";
 import Footer from "./components/Footer";
 import GalleryComponent from "./components/GalleryComponent";
 import HeroCarousel from "./components/HeroCarousel";
@@ -17,12 +17,12 @@ export default function MainPage() {
     <div className="w-full">
      <NavModalHeader />
      <HeroCarousel />
-     <DinningComponent />
-     <PizzaComponent />
-     <PastaComponent  />
-     <DessertComponent />
-     <GalleryComponent />
-    <Footer />
+     <DiningComponent id="dining" />
+     <PizzaComponent id="pizza" />
+     <PastaComponent id="pasta" />
+     <DessertComponent id="dessert" />
+     <GalleryComponent id="gallery" />
+    <Footer id="contactUs" />
     </div>
   );
 }

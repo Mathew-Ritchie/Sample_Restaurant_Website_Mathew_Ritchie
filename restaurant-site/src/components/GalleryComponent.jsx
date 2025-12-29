@@ -13,7 +13,7 @@ export default function GalleryComponent() {
     "/images/landing-hero/pizza3.png",
     "/images/Interior-dining.png",
     "/images/pasta2.png",
-    "/images/cocktail.jpg",
+    "/images/cocktail.jpg", 
     "/images/interior-dining3.jpg",
     "/images/pasta3.jpg",
     "/images/wine.jpg",
@@ -22,8 +22,8 @@ export default function GalleryComponent() {
   ];
 
   return (
-    <div className="flex justify-center items-center bg-gray-900 py-10 px-20 w-full">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="gallery">
+    <div className="flex justify-center items-center bg-gray-900 py-10   px-20 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-25" id="gallery">
         {images.map((src, index) => (
           <div 
             key={index} 

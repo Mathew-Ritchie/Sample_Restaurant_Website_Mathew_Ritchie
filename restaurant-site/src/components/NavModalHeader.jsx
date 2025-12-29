@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 
 export default function NavModalHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,8 +11,8 @@ export default function NavModalHeader() {
 
   return (
     <>
-      <div className="bg-black/40 flex items-center justify-end p-4 text-white shadow-lg h-10 w-full fixed  z-50">
-        <Link className="bg-white/50 rounded-b-full absolute top-0 left-4 h-20 " href="/">
+      <div className="bg-black/40 flex items-center justify-end p-4 text-white shadow-lg h-20 w-full fixed  z-50">
+        <a className="bg-white/50 rounded-b-full absolute top-0 left-4 h-20 " href="/">
           <img
             src="/images/logo.png"
             alt="Bayside Pizzeria Logo"
@@ -20,7 +20,7 @@ export default function NavModalHeader() {
             width={417}
             height={96}
           />
-        </Link>
+        </a>
         <button
           className="lg:hidden text-white hover:text-gray-400 focus:outline-none p-2 rounded-md transition duration-300"
           onClick={toggleNav}
@@ -44,31 +44,43 @@ export default function NavModalHeader() {
 
         {/* Desktop Navigation for lg and up */}
         <nav className="hidden lg:flex items-center space-x-4 text-2xl pr-5">
-          <Link
-            href="/page/articles"
+          <a
+            href="#dining"
+            className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
+          >
+            Dining
+          </a>
+          <a
+            href="#pizza"
             className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
           >
             Pizza
-          </Link>
-          <Link
-            href="/page/articles"
+          </a>
+          <a
+            href="#pasta"
             className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
           >
             Pasta
-          </Link>
+          </a>
 
-          <Link
-            href="/page/articles"
+          <a
+            href="#dessert"
             className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
           >
             Desserts
-          </Link>
-          <Link
-            href="/page/contactUs"
+          </a>
+          <a
+            href="#gallery"
+            className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
+          >
+            Gallery
+          </a>
+          <a
+            href="#contactUs"
             className="p-2 rounded-md hover:bg-gray-700 transition duration-200"
           >
             Contact Us
-          </Link>
+          </a>
         </nav>
       </div>
 
@@ -114,35 +126,49 @@ export default function NavModalHeader() {
 
         <div className="flex flex-col justify-between items-start h-140">
           <nav className="p-4 space-y-2">
-            <Link
-              href="/page/articles"
+            <a
+              href="#dining"
+              className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
+              onClick={toggleNav}
+            >
+              Dining
+            </a>
+            <a
+              href="#pizza"
               className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
               onClick={toggleNav}
             >
               Pizza
-            </Link>
-            <Link
-              href="/page/articles"
+            </a>
+            <a
+              href="#pasta"
               className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
               onClick={toggleNav}
             >
               Pasta
-            </Link>
+            </a>
 
-            <Link
-              href="/page/articles"
+            <a
+              href="#dessert"
               className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
               onClick={toggleNav}
             >
               Dessert
-            </Link>
-            <Link
-              href="/page/contactUs"
+            </a>
+            <a
+              href="#gallery"
+              className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
+              onClick={toggleNav}
+            >
+              Gallery
+            </a>
+            <a
+              href="#contactUs"
               className="block p-2 rounded-md hover:bg-gray-700 transition duration-200"
               onClick={toggleNav}
             >
               Contact Us
-            </Link>
+            </a>
           </nav>
           <div className="flex flex-col gap-2 pl-2">
             <div className="flex justify-start gap-3 ">

@@ -14,7 +14,7 @@ export default function PastaComponent() {
       ></div>
 
       {/* Right side: Scrollable content layered on top */}
-      <div className="relative z-10 md:w-1/2 w-full bg-gray-800/80 text-white p-8 overflow-y-auto min-h-screen md:ml-auto">
+      <div className="relative z-10 md:w-1/2 w-full bg-gray-800/80 text-white pt-25  p-8 overflow-y-auto min-h-screen md:ml-auto">
         <h1 className="text-4xl md:text-4xl font-extrabold mb-8 rounded-lg">Home Made Pasta</h1>
         <div className="space-y-6 text-gray-300 leading-relaxed">
           <p>

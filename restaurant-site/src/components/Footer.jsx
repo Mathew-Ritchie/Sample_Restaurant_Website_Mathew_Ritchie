@@ -1,11 +1,11 @@
 import React from "react";
 import { Linkedin, Facebook, Instagram } from "lucide-react";
 
-export default function Footer() {
+export default function Footer({ id }) {
   return (
     <div
       className="w-full min-h-screen px-20 py-10 flex justify-center items-center gap-10 bg-gray-900 text-white"
-      id="contact"
+      id={id}
     >
       <div className="relative z-10 md:w-full w-full bg-gray-900 text-white p-8 overflow-y-auto ">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 rounded-lg text-center">
