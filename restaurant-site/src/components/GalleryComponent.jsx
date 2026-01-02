@@ -22,7 +22,7 @@ export default function GalleryComponent() {
   ];
 
   return (
-    <div className="flex justify-center items-center bg-gray-900 py-10   px-20 w-full">
+    <div className="flex justify-center items-center bg-gray-900 py-10 px-2  sm:px-20 w-full">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-25" id="gallery">
         {images.map((src, index) => (
           <div 
