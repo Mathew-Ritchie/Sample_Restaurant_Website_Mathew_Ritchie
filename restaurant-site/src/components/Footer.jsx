@@ -14,13 +14,28 @@ export default function Footer({ id }) {
         <div className="flex flex-col justify-center items-center gap-20">
           <div className="flex justify-center items-center gap-10">
             <img className="w-70" src={"/images/pizza-oven-sketch.png"} width={1500} height={1000} />
-            <div className="space-y-6 text-gray-300 leading-relaxed">
-              <p className="contact-titles">Telephone</p>
-              <p className="contact-details">+27 (000) 1111 222</p>
-              <p className="contact-titles">Email</p>
-              <p className="contact-details">bestpizza@pizza.co.za</p>
-              <p className="contact-titles">Physical Address</p>
-              <p className="contact-details">n.o. 1 One Street, Cape Town</p>
+
+
+            {/* Contact Information Div */}
+            <div className="flex flex-col justify-start items-start space-y-6 text-gray-300 leading-relaxed">
+              {/* Phone */}
+              <div className="flex justify-center items-center gap-2">
+                <img src="/icons/contact.gif" className="w-10" />
+                <p className="contact-details">+27 (000) 1111 222</p>
+                </div>
+              {/* Email */}
+              <div className="flex justify-center items-center gap-2"> 
+                <img src="/icons/email.gif" className="w-10" />
+                <p className="contact-details">bestpizza@pizza.co.za</p>
+                </div>
+              {/* Address */}
+              <div className="flex justify-center items-center gap-2">
+                <img src="/icons/google-maps.gif" className="w-10" />
+                <p className="contact-details">n.o. 1 One Street, Cape Town</p>
+                </div>
+              
+             
+              
             </div>
           </div>
 
