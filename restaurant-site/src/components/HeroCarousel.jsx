@@ -56,7 +56,7 @@ const HeroCarousel = () => {
               Bayside Pizzeria
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium drop-shadow-lg text-center">
-              Authentic Italian Flavors by the Sea
+              Authentic Italian Flavours by the Sea
             </p>
           </div>
         </div>
