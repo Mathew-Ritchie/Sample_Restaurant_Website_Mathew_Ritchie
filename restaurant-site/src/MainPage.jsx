@@ -1,3 +1,4 @@
+import CallToActionComponent from "./components/CallToActionComponent";
 import DessertComponent from "./components/DessertComponent";
 import DiningComponent from "./components/DiningComponent";
 import Footer from "./components/Footer";
@@ -21,6 +22,7 @@ export default function MainPage() {
      <PizzaComponent id="pizza" />
      <PastaComponent id="pasta" />
      <DessertComponent id="dessert" />
+     <CallToActionComponent />
      <GalleryComponent id="gallery" />
     <Footer id="contactUs" />
     </div>

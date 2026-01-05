@@ -1,3 +1,9 @@
 @import "tailwindcss";
 
 
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
