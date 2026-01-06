@@ -20,16 +20,16 @@ This project was built as a front-end showcase, focusing on layout, animation, a
 
 ## 📁 Project Structure
 
+```
 /project-root
-│
 ├── /app
 │ ├── /src
 │ ├── /public
-│ │ └── /images # Images & icons
+│ │ └── /images // Images & icons
 │ ├── package.json
 │ └── vite.config.js
-│
 └── README.md
+```
 
 shell
 Copy code
@@ -40,32 +40,47 @@ Copy code
 
 ## 🚀 Getting Started
 
-### 1. Install dependencies
-Navigate into the React app subfolder:
+> The React app lives in the `app` subfolder.  
+> Images and icons are stored in `app/public/images` and referenced as static assets.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+
+Navigate into the React app subfolder and install dependencies:
 
 ```bash
 cd app
 npm install
-2. Run the development server
-bash
-Copy code
+``
+
+### 2. Run Development Server
+Start the development server:
+
+```bash
 npm run dev
-The site will be available at http://localhost:5173 (or the port shown in the terminal).
+```
 
-🌐 Routing
-This project uses React Router DOM for navigation between pages without full page reloads, providing a smooth single-page application experience.
 
-🎬 Animations
-Animations and transitions are handled using Framer Motion, adding subtle movement to page transitions and UI elements.
+## 🌐 Routing
 
-📸 Images & Icons Attribution
-Images and icons used in this project are free-to-use assets sourced from Freepik.
+Navigation between pages is handled using **React Router DOM**, allowing smooth transitions without full page reloads.
 
-Attribution:
+## 🎨 Animations
 
-Images and icons by Freepik (https://www.freepik.com)
+All animations are built with **Framer Motion**, adding subtle and smooth transitions to elements and page changes.
 
-These assets are used for demonstration and educational purposes only.
+## 📸 Images & Icons
 
-📄 License
-This project is for demonstration and portfolio purposes only.
+All images and icons are free-to-use assets sourced from **Freepik**.
+
+**Attribution:**  
+Images and icons by [Freepik](https://www.freepik.com)
+
+Used for demonstration and educational purposes only.
+
+## 📄 License
+
+This project is for **demonstration and portfolio purposes only**.
