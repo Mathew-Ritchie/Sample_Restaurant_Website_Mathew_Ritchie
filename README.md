@@ -51,15 +51,16 @@ Copy code
 
 Navigate into the React app subfolder and install dependencies:
 
-```bash
-cd app
+```
+cd restaurant-site
 npm install
-``
+```
 
 ### 2. Run Development Server
+
 Start the development server:
 
-```bash
+```
 npm run dev
 ```
 
