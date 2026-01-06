@@ -1,6 +1,14 @@
-import React from "react";
+// import { useEffect } from "react";
+import { motion } from "framer-motion";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+
 
 export default function PizzaComponent() {
+//  useEffect(() => {
+//     AOS.init({ duration: 600, offset: 80, once: false });
+//   }, []);
+
   return (
     <div className="relative min-h-screen" id="pizza">
       {/* Background Image Container - This will be the full-screen layer */}
@@ -30,6 +38,29 @@ export default function PizzaComponent() {
             is a perfect blend of flavors and textures, making our pizza an experience you’ll want
             to have again and again.
           </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <motion.div 
+            className="w-full md:w-1/2"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            //whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="/images/landing-hero/pizza3.png" alt="Pizza in Oven" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            </motion.div>
+  
+            <motion.div
+            className="w-full md:w-1/2"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.3 }}
+            // whileHover={{ scale: 1.2 }}
+            transition={{ duration: 0.5 }}
+          >
+            <img src="/images/landing-hero/pizza2.png" alt="Delicious Pizza" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>

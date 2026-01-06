@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import GalleryComponent from "./components/GalleryComponent";
 import HeroCarousel from "./components/HeroCarousel";
 import NavModalHeader from "./components/NavModalHeader";
-import PastaComponent from "./components/PastatComponent";
+import PastaComponent from "./components/PastaComponent";
 import PizzaComponent from "./components/PizzaComponent";
 // import Dessert from "@/components/dessert";
 // import Footer from "@/components/Footer";
