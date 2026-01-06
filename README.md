@@ -31,12 +31,6 @@ This project was built as a front-end showcase, focusing on layout, animation, a
 └── README.md
 ```
 
-shell
-Copy code
-
-> **Note:**  
-> The React application is contained within the `app` subfolder.  
-> All images and icons are stored in `app/public/images` and referenced as static assets.
 
 ## 🚀 Getting Started
 
