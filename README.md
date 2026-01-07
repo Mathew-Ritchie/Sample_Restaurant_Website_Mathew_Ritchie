@@ -24,6 +24,8 @@ This project was built as a front-end showcase, focusing on layout, animation, a
 /project-root
 ├── /app
 │ ├── /src
+│ │ ├── /components 
+│ │ └── /pages
 │ ├── /public
 │ │ └── /images // Images & icons
 │ ├── package.json
