@@ -3,12 +3,12 @@ import React, { useState, useEffect } from "react";
 // The HeroCarousel component is a full-screen hero section with a fading image slideshow.
 // All images and animation logic are contained within this single file.
 const images = [
-  "/images/landing-hero/pizza.png",
-  "/images/pasta.png",
-  "/images/landing-hero/beer-pour.png",
-  "/images/landing-hero/pizza-in-oven.png",
-  "/images/landing-hero/pizza2.png",
-  "/images/landing-hero/pizza3.png",
+  "/images/landing-hero/pizza.jpeg",
+  "/images/pasta.jpeg",
+  "/images/landing-hero/beer-pour.jpeg",
+  "/images/landing-hero/pizza-in-oven.jpeg",
+  "/images/landing-hero/pizza2.jpeg",
+  "/images/landing-hero/pizza3.jpeg",
 ];
 
 const HeroCarousel = () => {
