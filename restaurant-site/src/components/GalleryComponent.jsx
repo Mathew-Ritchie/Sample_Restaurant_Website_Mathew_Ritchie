@@ -5,12 +5,12 @@ export default function GalleryComponent() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [
-    "/images/landing-hero/pizza.png",
+    "/images/landing-hero/pizza.jpeg",
     "/images/pasta.png",
-    "/images/landing-hero/beer-pour.png",
-    "/images/landing-hero/pizza-in-oven.png",
-    "/images/landing-hero/pizza2.png",
-    "/images/landing-hero/pizza3.png",
+    "/images/landing-hero/beer-pour.jpeg",
+    "/images/landing-hero/pizza-in-oven.jpeg",
+    "/images/landing-hero/pizza2.jpeg",
+    "/images/landing-hero/pizza3.jpeg",
     "/images/Interior-dining.png",
     "/images/pasta2.png",
     "/images/cocktail.jpg", 
