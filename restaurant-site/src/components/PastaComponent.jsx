@@ -7,7 +7,7 @@ export default function PastaComponent() {
       <div
         className="absolute inset-0 bg-cover bg-[position:90%_60%]"
         style={{
-          backgroundImage: `url('/images/pasta2.png')`,
+          backgroundImage: `url('/images/pasta2.jpeg')`,
           backgroundAttachment: "fixed",
         }}
         id="pasta"
@@ -39,7 +39,7 @@ export default function PastaComponent() {
             //whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/images/pasta2.png" alt="Pizza in Oven" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            <img src="/images/pasta2.jpeg" alt="Pizza in Oven" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
             </motion.div>
   
             <motion.div
@@ -50,7 +50,7 @@ export default function PastaComponent() {
             // whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/images/pasta3.jpg" alt="Delicious pasta" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            <img src="/images/pasta3.jpeg" alt="Delicious pasta" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
             </motion.div>
           </div>
         </div>

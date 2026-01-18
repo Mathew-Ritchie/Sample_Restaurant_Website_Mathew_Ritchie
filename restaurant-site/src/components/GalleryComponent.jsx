@@ -6,17 +6,17 @@ export default function GalleryComponent() {
 
   const images = [
     "/images/landing-hero/pizza.jpeg",
-    "/images/pasta.png",
+    "/images/pasta.jpeg",
     "/images/landing-hero/beer-pour.jpeg",
     "/images/landing-hero/pizza-in-oven.jpeg",
     "/images/landing-hero/pizza2.jpeg",
     "/images/landing-hero/pizza3.jpeg",
-    "/images/Interior-dining.png",
-    "/images/pasta2.png",
-    "/images/cocktail.jpg", 
-    "/images/interior-dining3.jpg",
-    "/images/pasta3.jpg",
-    "/images/wine.jpg",
+    "/images/Interior-dining.jpeg",
+    "/images/pasta2.jpeg",
+    "/images/cocktail.jpeg", 
+    "/images/interior-dining3.jpeg",
+    "/images/pasta3.jpeg",
+    "/images/wine.jpeg",
 
     
   ];

@@ -5,7 +5,7 @@ export default function DiningComponent({id}) {
     <div
       className="w-full sm:min-h-screen sm:px-10 lg:px-25 pt-20 pb-5 flex justify-center items-center bg-no-repeat bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: `url('images/Interior-dining.png')`,
+        backgroundImage: `url('images/Interior-dining.jpeg')`,
       }}
       id={id}
     >
@@ -28,19 +28,19 @@ export default function DiningComponent({id}) {
             {/* First image */}
             <div className=" w-full md:w-3/4 flex justify-center sm:justify-end items-center">
               <div className="p-2 bg-gray-900 h-auto rounded-lg shadow-lg"> 
-                <img src={"images/interior-dining3.jpg"} alt="restaurant seating" className=" mx-auto w-full sm:w-60 h-auto rounded-lg shadow-lg"/>
+                <img src={"images/interior-dining3.jpeg"} alt="restaurant seating" className=" mx-auto w-full sm:w-60 h-auto rounded-lg shadow-lg"/>
               </div>
             </div>
             {/* Second image */}
             <div className=" w-full md:w-3/4   flex justify-center sm:justify-start items-center">
               <div className="p-2 bg-gray-900 h-auto rounded-lg shadow-lg"> 
-                <img src={"images/cocktail.jpg"} alt="restaurant seating" className=" mx-auto w-full sm:w-50 h-auto rounded-lg shadow-lg"/>
+                <img src={"images/cocktail.jpeg"} alt="restaurant seating" className=" mx-auto w-full sm:w-50 h-auto rounded-lg shadow-lg"/>
               </div>
             </div>
             {/* Third image */}
             <div className=" w-full md:w-3/4   flex justify-center sm:justify-end items-center">
               <div className="p-2 bg-gray-900 h-auto rounded-lg shadow-lg"> 
-                <img src={"images/wine.jpg"} alt="restaurant seating" className=" mx-auto w-full sm:w-60 h-auto rounded-lg shadow-lg"/>
+                <img src={"images/wine.jpeg"} alt="restaurant seating" className=" mx-auto w-full sm:w-60 h-auto rounded-lg shadow-lg"/>
               </div>
             </div>
             

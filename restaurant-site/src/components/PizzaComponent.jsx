@@ -15,7 +15,7 @@ export default function PizzaComponent() {
       <div
         className="absolute inset-0 bg-cover bg-[position:10%_60%]"
         style={{
-          backgroundImage: `url('/images/pizza-in-oven2.png')`,
+          backgroundImage: `url('/images/pizza-in-oven2.jpeg')`,
           backgroundAttachment: "fixed",
         }}
       ></div>

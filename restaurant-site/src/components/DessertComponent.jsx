@@ -7,7 +7,7 @@ export default function DessertComponent() {
       <div
         className="absolute  inset-0 bg-cover bg-[position:10%_60%]"
         style={{
-          backgroundImage: `url('/images/dessert.png')`,
+          backgroundImage: `url('/images/dessert.jpeg')`,
           backgroundAttachment: "fixed",
         }}
       ></div>
