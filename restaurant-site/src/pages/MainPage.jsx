@@ -7,6 +7,7 @@ import HeroCarousel from "../components/HeroCarousel";
 import NavModalHeader from "../components/NavModalHeader";
 import PastaComponent from "../components/PastaComponent";
 import PizzaComponent from "../components/PizzaComponent";
+import ContactUs from "../components/ContactUs";
 
 
 export default function MainPage() {
@@ -20,7 +21,8 @@ export default function MainPage() {
      <DessertComponent id="dessert" />
      <CallToActionComponent />
      <GalleryComponent id="gallery" />
-    <Footer id="contactUs" />
+    <ContactUs id="contactUs" />
+    <Footer />
     </div>
   );
 }
