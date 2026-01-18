@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, Facebook, Instagram } from "lucide-react";
+import { Linkedin, Facebook, Instagram, Contact } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 export default function Footer({ id }) {
   return (
@@ -37,7 +38,10 @@ export default function Footer({ id }) {
              
               
             </div>
+
+            
           </div>
+          <ContactForm />
 
           <div>
             {" "}

@@ -47,7 +47,7 @@ export default function PizzaComponent() {
             //whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/images/landing-hero/pizza3.png" alt="Pizza in Oven" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            <img src="/images/landing-hero/pizza3.jpeg" alt="Pizza in Oven" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
             </motion.div>
   
             <motion.div
@@ -58,7 +58,7 @@ export default function PizzaComponent() {
             // whileHover={{ scale: 1.2 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/images/landing-hero/pizza2.png" alt="Delicious Pizza" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
+            <img src="/images/landing-hero/pizza2.jpeg" alt="Delicious Pizza" className="w-full sm:h-60 md:h-50  object-cover rounded-lg" />
             </motion.div>
           </div>
         </div>
